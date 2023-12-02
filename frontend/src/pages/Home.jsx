@@ -1,10 +1,12 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from 'react';
+import Layout from "../components/Layout.jsx";
 
-export default function Home() {
+function Home() {
     return (
         <Layout>
-            <h1 className='text-[40px] text-center font-semibold text-cyan-500'>AMovie</h1>
+            <h1 className="text-4xl text-center">Tailwind working</h1>
         </Layout>
-    )
+    );
 }
+
+export default Home;

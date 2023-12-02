@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default function Navbar() {
-  return (
-    <div>Navbar</div>
-  )
+function Navbar() {
+    return (
+        <div className="">
+            Navbar
+        </div>
+    );
 }
+
+export default Navbar;
