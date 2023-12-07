@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
 import Layout from "../components/Layout.jsx";
+import About from "../components/About.jsx";
+import RoomsInfo from "../components/RoomsInfo.jsx";
 
 function Home() {
-    return (
-        <Layout>
-            <h1 className="text-4xl text-center">Tailwind working</h1>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <About/>
+        <RoomsInfo/>
+      
+    </Layout>
+  );
 }
 
 export default Home;
