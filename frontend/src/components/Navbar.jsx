@@ -4,11 +4,11 @@ import { CiMenuBurger } from "react-icons/ci";
 
 const navbarItems = [
   { id: 1, title: "Home", path: "/" },
-  { id: 2, title: "Rooms", path: "/rooms" },
-  { id: 1, title: "About", path: "/about" },
-  { id: 2, title: "Events", path: "/events" },
-  { id: 1, title: "Contact", path: "/contact" },
-  { id: 2, title: "Reservation", path: "/reservation" },
+  { id: 2, title: "Rooms", path: "/RoomsMenu" },
+  { id: 3, title: "About", path: "/about" },
+  { id: 4, title: "Events", path: "/events" },
+  { id: 5, title: "Contact", path: "/contact" },
+  { id: 6, title: "Reservation", path: "/reservation" },
 ];
 
 function Navbar() {
@@ -28,10 +28,14 @@ function Navbar() {
             </Link>
           ))}
         </div>
-        <h1 onClick={() => setShow(true)}><CiMenuBurger /></h1>
+        <h1 onClick={() => setShow(true)}>
+          <CiMenuBurger />
+        </h1>
         {show ? (
           <div className="w-full h-screen absolute top-0 left-0 bg-slate-600 flex flex-col items-center justify-center md:hidden ">
-            <h1 onClick={() => setShow(false)}><CiMenuBurger /></h1>
+            <h1 onClick={() => setShow(false)}>
+              <CiMenuBurger />
+            </h1>
 
             {navbarItems.map((item) => (
               <Link

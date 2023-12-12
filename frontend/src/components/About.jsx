@@ -21,14 +21,14 @@ export default function About() {
                 to={"/"}
                 className="bg-[#ffba5a] rounded-full py-2 px-5 hover:bg-[#ffaa34] transition-colors duration-300"
               >
-                Learn More
+                Узнать Больше
               </Link>
-              <h1 className="text-gray-500 font-PlayFairDisplay italic">or</h1>
+              <h1 className="text-gray-500 font-PlayFairDisplay italic">или</h1>
               <Link
                 to={"/"}
                 className="text-[#ffba5a] hover:text-[#ffaa34] transition-colors duration-300"
               >
-                SEE VIDEO
+                ПОСМОТРЕТЬ ВИДЕО
               </Link>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function About() {
           <div className="relative">
             <img
               className="rounded-md"
-              src="./public/macan-hotel-about.jpg"
+              src="/macan-hotel-about.jpg"
               alt=""
             />
             <img
