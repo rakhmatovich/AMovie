@@ -1,44 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function RoomsInfo() {
-  const roomsInfo = [
-    {
-      id: 1,
-      url: "/Rooms1.jpg",
-      name: "Одиночный Номер",
-      price: "60",
-    },
-    {
-      id: 2,
-      url: "/Rooms2.jpg",
-      name: "Двухместный Номер",
-      price: "75",
-    },
-    {
-      id: 3,
-      url: "Rooms3.jpg",
-      name: "Президентский Номер",
-      price: "120",
-    },
-  ];
-
+export default function RoomsInfo({roomsInfo, roomsHeading}) {
   return (
     <div>
-      <section>
-        <div className="text-center">
-          <h1 className="font-PlayFairDisplay text-[30px] m-3 font-medium">
-            Комнаты и Апартаменты
-          </h1>
-          <div className="font-sans w-[50%] mx-auto text-gray-500">
-            В MACAN Terrace Hotel в номерах есть телевизор с плоским экраном,
-            письменный стол и собственная ванная комната, а также
-            предоставляются постельное белье и полотенца. Во всех номерах в
-            MACAN Terrace Hotel есть платяной шкаф, а также установлен
-            кондиционер.
-          </div>
-        </div>
-        <div className="flex justify-between w-[80%] mx-auto gap-10 mt-10 ">
+      <section className="py-20">
+        {roomsHeading}
+        <div className="flex justify-between w-[80%] mx-auto gap-10 mt-10 flex-wrap">
           {roomsInfo.map((room) => (
             <div key={room.id} className="w-[30%] overflow-hidden">
               <img

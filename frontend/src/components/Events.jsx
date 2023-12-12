@@ -29,8 +29,8 @@ export default function EventsInfo() {
 
   return (
      
-    <section className="bg-[#f2f4fb] mt-28">
-      <div className="text-center pt-10">
+    <section className="bg-[#f2f4fb] py-20">
+      <div className="text-center">
         <h1 className="font-PlayFairDisplay m-3 text-[30px] font-bold">
           Новости
         </h1>

@@ -4,7 +4,7 @@ import { CiMenuBurger } from "react-icons/ci";
 
 const navbarItems = [
   { id: 1, title: "Home", path: "/" },
-  { id: 2, title: "Rooms", path: "/RoomsMenu" },
+  { id: 2, title: "Rooms", path: "/rooms" },
   { id: 3, title: "About", path: "/about" },
   { id: 4, title: "Events", path: "/events" },
   { id: 5, title: "Contact", path: "/contact" },

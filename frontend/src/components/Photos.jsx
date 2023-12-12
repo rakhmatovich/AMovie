@@ -34,7 +34,7 @@ export default function Photos() {
   };
 
   return (
-    <section className="bg-[#f2f4fb] mt-44">
+    <section className="bg-[#f2f4fb] py-20">
       <div className="text-center mt-10">
         <h1 className="font-PlayFairDisplay m-3 text-[30px] font-medium">
           Фото
