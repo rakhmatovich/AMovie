@@ -54,7 +54,7 @@ const Footer = () => {
               <IoLocationSharp />
               <span>address:</span>
             </div>
-            <h1 className="text-gray-400 content-between  ">
+            <h1 className="text-gray-400 content-between">
               198 West 21th Street, <br />
               Suite 721 New York NY 10016
             </h1>
@@ -119,7 +119,7 @@ const Footer = () => {
           <FaVimeoV size={25} />
         </a>
       </div>
-      <h6 className="text-center">&copy; Copyright Dev Eva {Year}</h6>
+      <h6 className="text-center">&copy; Copy right Dev Eva {Year}</h6>
     </footer>
   );
 };
