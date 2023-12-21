@@ -8,6 +8,7 @@ import EventsInfo from "../components/Events.jsx";
 import FilterRooms from "../components/FilterRooms.jsx";
 import Header from "../components/Header.jsx";
 import { FaStar } from "react-icons/fa";
+import Restaurant from "../components/Restaurant.jsx";
 
 const roomsInfo = [
   {
@@ -63,6 +64,7 @@ function Home() {
       <Photos />
       <Feedback />
       <EventsInfo />
+      <Restaurant />
     </Layout>
   );
 }

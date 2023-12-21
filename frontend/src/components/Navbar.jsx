@@ -14,8 +14,8 @@ const navbarItems = [
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
-    <div class="relative">
-      <div class="fixed w-full z-50 top-0 left-0 bg-white text-black text-4xl px-10 py-4 font-PlayFair flex items-center justify-between">
+    <div className="relative">
+      <div className="fixed w-full z-50 top-0 left-0 bg-white text-black text-4xl px-10 py-4 font-PlayFair flex items-center justify-between">
         <h1 className="text-4xl">MACAN Hotel</h1>
         <div className="hidden md:flex items-center">
           {navbarItems.map((item) => (
