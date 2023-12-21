@@ -86,7 +86,7 @@ export default function Feedback() {
   };
   return (
     <div className="py-20">
-      <h1 className="flex justify-center font-PlayFairDisplay text-5xl">
+      <h1 className="flex justify-center font-PlayFairDisplay text-4xl">
         Отзывы
       </h1>
       <div className="w-3/4 m-auto">

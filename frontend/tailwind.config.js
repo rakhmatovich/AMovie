@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         PlayFair: ["Playfair Display", "serif"],
         PlayFairDisplay: ['Playfair Display', 'serif'],
+        Price: ['Arimo','serif']
       },
     },
   },

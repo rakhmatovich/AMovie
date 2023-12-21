@@ -12,10 +12,10 @@ const navbarItems = [
 ];
 
 function Navbar() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   return (
-    <div class="relative">
-      <div class="fixed w-full z-50 top-0 left-0 bg-white text-black text-4xl px-10 py-4 font-PlayFair flex items-center justify-between">
+    <div className="relative">
+      <div className="fixed w-full z-50 top-0 left-0 bg-white text-black text-4xl px-10 py-4 font-PlayFair flex items-center justify-between">
         <h1 className="text-4xl">MACAN Hotel</h1>
         <div className="hidden md:flex items-center">
           {navbarItems.map((item) => (
@@ -28,26 +28,6 @@ function Navbar() {
             </Link>
           ))}
         </div>
-        <h1 onClick={() => setShow(true)}>
-          <CiMenuBurger />
-        </h1>
-        {show ? (
-          <div className="w-full h-screen absolute top-0 left-0 bg-slate-600 flex flex-col items-center justify-center md:hidden ">
-            <h1 onClick={() => setShow(false)}>
-              <CiMenuBurger />
-            </h1>
-
-            {navbarItems.map((item) => (
-              <Link
-                to={item.path}
-                key={item.id}
-                className="text-[22px] font-normal w-[200px]"
-              >
-                {item.title}
-              </Link>
-            ))}
-          </div>
-        ) : null}
       </div>
     </div>
   );

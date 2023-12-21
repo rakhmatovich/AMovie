@@ -1,6 +1,5 @@
 import React from "react";
 import RoomsMenu from "../components/RoomsMenu";
-import EventsInfo from "../components/Events";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import FilterRooms from "../components/FilterRooms";
@@ -26,19 +25,19 @@ const roomsInfo = [
     price: "120",
   },
   {
-    id: 1,
+    id: 4,
     url: "/Rooms1.jpg",
     name: "Одиночный Номер",
     price: "60",
   },
   {
-    id: 2,
+    id: 5,
     url: "/Rooms2.jpg",
     name: "Двухместный Номер",
     price: "75",
   },
   {
-    id: 3,
+    id: 6,
     url: "Rooms3.jpg",
     name: "Президентский Номер",
     price: "120",
@@ -48,11 +47,10 @@ const roomsInfo = [
 export default function Rooms() {
   return (
     <Layout>
-      <Header
-        title={"Rooms"}
-      />
+      <Header title={"Rooms"} />
       <FilterRooms />
       <RoomsInfo roomsInfo={roomsInfo} />
+      <RoomsMenu />
     </Layout>
   );
 }
